@@ -1,0 +1,15 @@
+<svg width="968" height="94" viewbox="0 0 968 94" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+
+ <g>
+  <title>background</title>
+  <rect fill="#1c1c27" id="canvas_background" height="96" width="470" y="-1" x="-1"/>
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <text font-weight="normal" font-style="normal" stroke="#a4def9" stroke-width="1px" transform="matrix(7.01610546311843,0,0,4.317023695282886,-3476.836807292609,-883.2106124129072) " xml:space="preserve" text-anchor="start" font-family="'League Gothic', sans-serif" font-size="21" id="svg_1" y="223.38221" x="496.50609" fill="none">SOJOL BOSE</text>
+ </g>
+</svg>
