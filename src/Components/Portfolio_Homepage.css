@@ -4,7 +4,7 @@
 
 .sojol{
 
-    background-color: #1c1c27;
+    background-color: #0a192f;
     width: 100%;
     height: 450vh;
     /* border: 2px solid pink; */
@@ -27,6 +27,11 @@
     z-index: 1000;
     font-family: 'Poppins', sans-serif;
     font-size: 1.3em;
+    color: #a4def9;
+}
+
+.nav-left a{
+    text-decoration: none;
     color: #a4def9;
 }
 
@@ -54,7 +59,7 @@
     transition: 0.5s;
 }
 
-.nav-right a::before{
+.nav-link a::before{
     content: "";
     position: absolute;
     width:0px;
@@ -68,7 +73,7 @@
     
 }
 
-.nav-right a:hover::before{
+.nav-link a:hover::before{
     visibility: visible;
     width: 100%;
 }
@@ -114,7 +119,7 @@
     width: 50%;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #1c1c27;
+    background-color: #0a192f;
     box-shadow: 2px 2px 5px rgb(0, 0, 0);
     /* border: 2px solid green; */
     transform: translateX(100%);
@@ -155,7 +160,8 @@
     /* margin-left: 50%; */
     font-size: 2.5em;
     font-family: 'Archivo', sans-serif;
-    color: #8dab7f;
+    /* color: #8dab7f; */
+    color: #a4def9;
     /* border: 2px solid black; */
 }
 
@@ -245,7 +251,7 @@
         fill: transparent;
     }
     to{
-        fill: #8badaa;
+        fill: #8dab7f;
     }
 }
 
@@ -301,6 +307,7 @@
     height:60%;
     text-align: center;
     margin: 0% 5% 0% 5%;
+    width: 300%;
     align-items: center;
     height: fit-content;
     /* transform: translate(0%, -50%); */
@@ -308,7 +315,7 @@
 
 .about-text div{
     color: #a4def9;
-    font-size: 1.8vw;
+    font-size: 1.5vw;
     font-family: 'Poppins', sans-serif;
     /* margin: 10%; */
     height:100%;
@@ -333,7 +340,7 @@
     transition: 0.2s;
 }
 
-.profile-pic:before{
+/* .profile-pic:before{
     content:"";
     position: absolute;
     width: 0px;
@@ -373,7 +380,7 @@
 .profile-pic:hover::after{
     visibility: visible;
     height: 200px;
-}
+} */
 
 .work{
     position: absolute;
@@ -382,6 +389,7 @@
     margin-left:15%;
     margin-right:15%;
     margin-top: 15%;
+    padding-top: 10%;
     top:200vh;
     display:flex;
     flex-direction: column;
@@ -462,7 +470,7 @@
 
 .desc div h4{
     font-size: 1.5vw;
-    color: rgb(121, 121, 121);
+    color: #8892b0;
 }
 
 .desc div div span{
@@ -487,6 +495,7 @@ li{
     height:100vh;
     margin-left:15%;
     margin-right:15%;
+    padding-top: 10%;
     /* border: 2px solid black; */
 }
 
@@ -537,7 +546,7 @@ li{
 
 .card .card-header ul li{
     text-align: start;
-    color: #a4def9;
+    color: #8dab7f;
     font-family: 'Poppins', sans-serif;
     font-size: 1vw;
 }
@@ -596,6 +605,7 @@ li{
     /* border:2px solid white; */
     height: 100vh;
     width: 80%;
+    padding-top: 10%;
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -698,10 +708,22 @@ li{
     visibility: visible;
 }
 
+.footer{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2%;
+    position: relative;
+    top: 660vh;
+    /* bottom: 10vh; */
+    display: flex;
+    justify-content: center;
+}
 
-/* .sortVisualizer:hover .inside-image a{
-    display: inline-block;
-} */
+.footer div{
+    color: #a4def9;
+    font-size: 1vw;
+    font-family: 'Courier New', Courier, monospace;
+}
 
 
 
@@ -741,6 +763,10 @@ li{
 
     .nav-right{
         display: none;
+    }
+    
+    .nav-left{
+        font-size: 1em;
     }
 
     .about{
@@ -840,6 +866,14 @@ li{
 
     .project-tech li{
         font-size: 1.5vw;
+    }
+
+    .footer{
+        top:600vh;
+    }
+    
+    .footer div{
+        font-size: 2vw;
     }
 
     

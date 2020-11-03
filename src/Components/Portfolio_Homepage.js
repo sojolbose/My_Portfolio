@@ -100,7 +100,7 @@ class Portfolio_Homepage extends Component {
     }
 
     componentDidUpdate(){
-        console.log(this.state.aboutSection)
+        // console.log(this.state.aboutSection)
         // if(this.state.aboutSection ===1){
         //     console.log("About"+this.state.aboutSection)
         //     TweenLite.from(this.about, 2, {y:200, opacity:0})
@@ -149,15 +149,15 @@ class Portfolio_Homepage extends Component {
         return (
             <div className="sojol">
                 <div className="nav">
-                    <div className="nav-left">
-                        <a>Home</a>
+                    <div className="nav-left nav-link">
+                        <a href="#">Home</a>
                     </div>
                     
-                    <div className="nav-right">
+                    <div className="nav-right nav-link">
                         {/* <div><a href="#intro">Home</a></div> */}
                         <div className="navbar-item"><a href="#about">About</a></div>
                         <div className="navbar-item"><a href="#work">Experience</a></div>
-                        <div className="navbar-item"><a href="#stack">Stack</a></div>
+                        <div className="navbar-item"><a href="#stack-wrapper">Stack</a></div>
                         <div className="navbar-item"><a href="#projects">Projects</a></div>
                     </div>
 
@@ -166,7 +166,7 @@ class Portfolio_Homepage extends Component {
                         <div className="line2 line"></div>
                         <div className="line3 line"></div>
 
-                        <div className={this.state.burgerToggler?"burger-items burger-active": "burger-items"}>
+                        <div className={this.state.burgerToggler?"burger-items burger-active nav-link": "burger-items nav-link"}>
                             <div className="burger-item"><a href="#about">About</a></div>
                             <div className="burger-item"><a href="#work">Experience</a></div>
                             <div className="burger-item"><a href="#stack">Stack</a></div>
@@ -190,8 +190,8 @@ class Portfolio_Homepage extends Component {
                     <br></br>
                     <br></br>
                     <p className="sub-header">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        I'm a software engineer based out of India specialising in designing and developing interactive 
+                        websites, dashboards , data visualization applications and everything in between.
                     </p>                    
                 </div> 
                 
@@ -213,10 +213,9 @@ class Portfolio_Homepage extends Component {
                 <div ref={(input)=>this.about=input} id="about" className="about">
                     <div className="about-text">
                         <div>
-                            I'm a web developer based out of planet earth.
-                            My work emphasises on building responsive , interactive and stunning looking web-sites
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            Hi, I'm Sojol, a software engineer based in India.<br></br><br></br>
+                            I'm an engineer by the day, an average guitarist (I am getting better though) by night and a creative, productive hub throughout the day.
+                            
                         </div>
                     </div>
 
@@ -298,7 +297,7 @@ class Portfolio_Homepage extends Component {
                     </div>
                 </div>
 
-                <div ref={(input)=>this.stack=input} className="stack-wrapper">
+                <div ref={(input)=>this.stack=input} className="stack-wrapper" id="stack-wrapper">
                     <h2>My Technology Stack 
                         {/* <svg width="200px" height="20px"> <path fill="none" strokeWidth="1px" stroke="#a4def9" d="M00 10 L200 10"/></svg> */}
                     </h2>
@@ -382,7 +381,7 @@ class Portfolio_Homepage extends Component {
                     </div>
                 </div>
 
-                <div className="projects">
+                <div className="projects" id="projects">
                     <h1>My Personal Projects</h1>
                     <div>
                         <p>
@@ -400,7 +399,7 @@ class Portfolio_Homepage extends Component {
                         {/* <img src={sortVisualizer}/> */}
                         <div className="sortVisualizer project-image">
                             <div className="inside-image">
-                                <a>Go to Github Source</a>
+                                <a href="https://github.com/sojolbose/SortVisualizer" target="_blank">Go to Github Source</a>
                             </div>
                         </div>
                     </div>
@@ -410,7 +409,7 @@ class Portfolio_Homepage extends Component {
                         {/* <img src={exchangeRate} /> */}
                         <div className="exchangeRate project-image">
                             <div className="inside-image">
-                                <a>Go to Github Source</a>
+                                <a href="https://github.com/sojolbose/ExchangeRateGraphPlotter" target="_blank">Go to Github Source</a>
                             </div>
                         </div>
                         <p>
@@ -427,9 +426,13 @@ class Portfolio_Homepage extends Component {
                             </ul>
                         </p>
                     </div>
-                    
-                    
+                </div>
 
+                <div className="footer">
+                    <div>
+                        Designed and Developed by Sojol Bose
+                    </div>
+                    
                 </div>
                 
             
